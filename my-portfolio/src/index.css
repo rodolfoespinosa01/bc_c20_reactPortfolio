@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;700&display=swap');
+
+@layer base {
+  body {
+    @apply font-[DM+Serif+Display];
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+}
