@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
@@ -20,11 +21,11 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><NavLink className="hover:underline p-1" to="/">Home</NavLink></li>
+        <li> <NavLink className="hover:underline p-1" to="/about">About</NavLink></li>
+        <li> <NavLink className="hover:underline p-1" to="/work">Work</NavLink></li>
+        <li> <NavLink className="hover:underlin p-1" to="/contact">Contact</NavLink></li>
+        {/* <li> <NavLink to="/resume">Resume</NavLink></li> */}
       </ul>
 
 
@@ -34,12 +35,12 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
-        <li className="py-6 text-4xl"><a href="/">Home</a></li>
-        <li className="py-6 text-4xl"><a href="/about">About</a></li>
-        <li className="py-6 text-4xl"><a href="/work">Work</a></li>
-        <li className="py-6 text-4xl"><a href="/contact">Contact</a></li>
-        <li className="py-6 text-4xl"><a href="/resume">Resume</a></li>
+      <ul onClick={handleClick} className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
+        <li className="py-6 text-4xl"><li><NavLink to="/">Home</NavLink></li></li>
+        <li className="py-6 text-4xl"> <NavLink to="/about">About</NavLink></li>
+        <li className="py-6 text-4xl"><li> <NavLink to="/work">Work</NavLink></li></li>
+        <li className="py-6 text-4xl"><NavLink to="/contact">Contact</NavLink></li>
+        {/* <li className="py-6 text-4xl"><NavLink to="/resume">Resume</NavLink></li> */}
       </ul>
 
 
