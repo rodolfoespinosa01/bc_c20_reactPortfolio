@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 
 import Logo from '../assets/pngTree_robot1.png'
@@ -19,10 +20,10 @@ const Navbar = () => {
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <li><Link to="about" smooth={true} duration={500} >About</Link></li>
+        <li><Link to="work" smooth={true} duration={500} >Work</Link></li>
+        <li><Link to="contact" smooth={true} duration={500} >Contact</Link></li>
+        <li><Link to="resume" smooth={true} duration={500} >Resume</Link></li>
       </ul>
 
 
@@ -31,12 +32,12 @@ const Navbar = () => {
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
-      {/* Mobile Mennu */}
+      {/* Mobile Menu */}
       <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
-        <li className="py-6 text-4xl">About Me</li>
-        <li className="py-6 text-4xl">Portfolio</li>
-        <li className="py-6 text-4xl">Contact</li>
-        <li className="py-6 text-4xl">Resume</li>
+        <li className="py-6 text-4xl"><Link onClick={handleClick} to="about" smooth={true} duration={500} >About</Link></li>
+        <li className="py-6 text-4xl"><Link onClick={handleClick} to="work" smooth={true} duration={500} >Work</Link></li>
+        <li className="py-6 text-4xl"><Link onClick={handleClick} to="contact" smooth={true} duration={500} >Contact</Link></li>
+        <li className="py-6 text-4xl"><Link onClick={handleClick} to="resume" smooth={true} duration={500} >Resume</Link></li>
       </ul>
 
 
