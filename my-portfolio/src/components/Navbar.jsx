@@ -36,11 +36,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul onClick={handleClick} className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
-        <li className="py-6 text-4xl"><li><NavLink to="/">Home</NavLink></li></li>
+
+        <li className="py-6 text-4xl"><NavLink to="/">Home</NavLink></li>
+
         <li className="py-6 text-4xl"> <NavLink to="/about">About</NavLink></li>
-        <li className="py-6 text-4xl"><li> <NavLink to="/work">Work</NavLink></li></li>
+
+        <li className="py-6 text-4xl"><NavLink to="/work">Work</NavLink></li>
+
         <li className="py-6 text-4xl"><NavLink to="/contact">Contact</NavLink></li>
-        {/* <li className="py-6 text-4xl"><NavLink to="/resume">Resume</NavLink></li> */}
+
       </ul>
 
 
@@ -51,6 +55,7 @@ const Navbar = () => {
 
             <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume <BsFillPersonLinesFill size={30} /></a>
           </li>
+
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
 
             <a className="flex justify-between items-center w-full text-gray-300" href="/">Linkedin <FaLinkedin size={30} /></a>
@@ -65,6 +70,7 @@ const Navbar = () => {
 
             <a className="flex justify-between items-center w-full text-gray-300" href="/">Email <HiOutlineMail size={30} /></a>
           </li>
+
         </ul>
       </div>
 
