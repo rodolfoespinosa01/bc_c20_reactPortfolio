@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { Link } from 'react-scroll'
+
 
 
 import Logo from '../assets/pngTree_robot1.png'
@@ -14,16 +15,17 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#051923] text-gray-300">
 
       <div >
-        <img src={Logo} alt="Logo Image" style={{ width: '50px' }} />
+        <img src={Logo} alt="AI Logo" style={{ width: '50px' }} />
       </div>
 
       {/* menu */}
 
       <ul className="hidden md:flex">
-        <li><Link to="about" smooth={true} duration={500} >About</Link></li>
-        <li><Link to="work" smooth={true} duration={500} >Work</Link></li>
-        <li><Link to="contact" smooth={true} duration={500} >Contact</Link></li>
-        <li><Link to="resume" smooth={true} duration={500} >Resume</Link></li>
+        <li><NavLink className="hover:underline p-1" to="/">Home</NavLink></li>
+        <li> <NavLink className="hover:underline p-1" to="/about">About</NavLink></li>
+        <li> <NavLink className="hover:underline p-1" to="/work">Work</NavLink></li>
+        <li> <NavLink className="hover:underlin p-1" to="/contact">Contact</NavLink></li>
+        <li> <NavLink className="hover:underlin p-1" to="/resume">Resume</NavLink></li>
       </ul>
 
 
@@ -33,11 +35,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
-        <li className="py-6 text-4xl"><Link onClick={handleClick} to="about" smooth={true} duration={500} >About</Link></li>
-        <li className="py-6 text-4xl"><Link onClick={handleClick} to="work" smooth={true} duration={500} >Work</Link></li>
-        <li className="py-6 text-4xl"><Link onClick={handleClick} to="contact" smooth={true} duration={500} >Contact</Link></li>
-        <li className="py-6 text-4xl"><Link onClick={handleClick} to="resume" smooth={true} duration={500} >Resume</Link></li>
+      <ul onClick={handleClick} className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#051923] flex flex-col justify-center items-center "}>
+
+        <li className="py-6 text-4xl"><NavLink to="/">Home</NavLink></li>
+
+        <li className="py-6 text-4xl"> <NavLink to="/about">About</NavLink></li>
+
+        <li className="py-6 text-4xl"><NavLink to="/work">Work</NavLink></li>
+
+        <li className="py-6 text-4xl"><NavLink to="/contact">Contact</NavLink></li>
+
+        <li className="py-6 text-4xl"><NavLink to="/resume">Resume</NavLink></li>
+
       </ul>
 
 
@@ -46,22 +55,24 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#003554]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume <BsFillPersonLinesFill size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="/resume">Resume <BsFillPersonLinesFill size={30} /></a>
           </li>
+
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Linkedin <FaLinkedin size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/rodolfo-espinosa-nunez-77131b64/" target="_blank" rel="noopener noreferrer">Linkedin <FaLinkedin size={30} /></a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Github <FaGithub size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/rodolfoespinosa01" target="_blank" rel="noopener noreferrer">Github <FaGithub size={30} /></a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0582ca]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Email <HiOutlineMail size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="/contact">Contact <HiOutlineMail size={30} /></a>
           </li>
+
         </ul>
       </div>
 
