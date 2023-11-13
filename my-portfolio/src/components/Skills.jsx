@@ -14,17 +14,17 @@ const Skills = () => {
 
         <div className="flex flex-row justify-between p-10">
           <div >
-            <img className="w-20" src={HTML} alt="HTML icon" />
+            <img className="w-10" src={HTML} alt="HTML icon" />
             <p className="my-4">HTML</p>
           </div>
 
           <div>
-            <img className="w-20" src={CSS} alt="CSS icon" />
+            <img className="w-10" src={CSS} alt="CSS icon" />
             <p className="my-4">CSS</p>
           </div>
 
           <div >
-            <img className="w-20" src={JS} alt="JS icon" />
+            <img className="w-10" src={JS} alt="JS icon" />
             <p className="my-4">JS</p>
           </div>
 
@@ -33,17 +33,17 @@ const Skills = () => {
 
         <div className="flex flex-row justify-between">
           <div >
-            <img className="w-20" src={MYSQL} alt="MYSQL icon" />
+            <img className="w-10" src={MYSQL} alt="MYSQL icon" />
             <p className="my-4">MYSQL</p>
           </div>
 
           <div >
-            <img className="w-20" src={MONGODB} alt="MONGODB icon" />
+            <img className="w-10" src={MONGODB} alt="MONGODB icon" />
             <p className="my-4">MONGODB</p>
           </div>
 
           <div >
-            <img className="w-20" src={REACT} alt="REACT icon" />
+            <img className="w-10" src={REACT} alt="REACT icon" />
             <p className="my-4">REACT</p>
           </div>
         </div>
