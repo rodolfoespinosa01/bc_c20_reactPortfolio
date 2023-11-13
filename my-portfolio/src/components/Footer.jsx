@@ -15,7 +15,7 @@ function Footer() {
       <ul className="flex">
 
         <li className="w-[120px] h-[60px] rounded  flex justify-between items-center bg-[#003554]">
-          <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume <BsFillPersonLinesFill size={30} /></a>
+          <a className="flex justify-between items-center w-full text-gray-300" href="/resume">Resume <BsFillPersonLinesFill size={30} /></a>
         </li>
 
         <li className="w-[120px] h-[60px] rounded flex justify-between items-center bg-blue-600">
