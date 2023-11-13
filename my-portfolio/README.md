@@ -94,3 +94,20 @@ https://www.iconfinder.com/icons/1174949/js_react_js_logo_react_react_native_ico
 
 ![Alt text](src/assets/me_edit.png)
 https://freepngimg.com/png/64956-emoticon-thumb-double-button-smiley-emoji-signal
+
+## Questions for me?
+
+Shoot me an email to rodolfoespinosa01@gmail.com
+
+## Github Profile
+
+Visit my Github profile!
+https://github.com/rodolfoespinosa01
+
+## Project Repo
+
+https://github.com/rodolfoespinosa01/bc_c20_reactPortfolio
+
+## Heroku Website Link
+
+https://guarded-lowlands-94580-887effed5c7f.herokuapp.com/

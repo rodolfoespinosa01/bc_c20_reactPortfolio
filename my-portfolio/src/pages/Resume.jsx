@@ -29,12 +29,12 @@ const Resume = () => {
     <>
       <div className="w-full h-screen bg-[#051923] flex flex-col justify-center items-center p-4 text-white">
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold">Rodolfo Espinosa-Nunez</h1>
-          <h4 className="text-lg">Full Stack Developer</h4>
+          <p className="text-4xl font-bold">Rodolfo Espinosa-Nunez</p>
+          <p className="text-3xl text-[#006494]">Full Stack Developer</p>
         </div>
 
         <div className="mb-8 text-center">
-          <p className="max-w-xl p-20">
+          <p className="max-w-xl p-15 text-xl">
             Long story short... I once ran a lucrative business that provided online coaching fitness services for fitness influencers who provided custom diet/training plans to their clients.
             I have found a new way to automate the process I used to do before when it came to generating custom diets for people. I plan to use my new Full Stack Web Development skills to not only build my very own app but also join the workforce to gain experience in real-life web development roles.
           </p>
