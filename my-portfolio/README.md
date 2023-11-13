@@ -91,3 +91,6 @@ https://pngtree.com/freepng/illustration-of-javascript-icon-a-popular-programmin
 
 ![Alt text](src/assets/pngTree_css.png)
 https://www.iconfinder.com/icons/1174949/js_react_js_logo_react_react_native_icon
+
+![Alt text](src/assets/me_edit.png)
+https://freepngimg.com/png/64956-emoticon-thumb-double-button-smiley-emoji-signal

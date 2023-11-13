@@ -1,5 +1,6 @@
 import React from 'react'
 import { FcBusiness } from 'react-icons/fc'
+import Skills from '../components/Skills'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
                 <FcBusiness />
               </span>
             </button>
+            <Skills />
           </a>
 
         </div>

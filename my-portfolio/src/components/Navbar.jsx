@@ -25,7 +25,7 @@ const Navbar = () => {
         <li> <NavLink className="hover:underline p-1" to="/about">About</NavLink></li>
         <li> <NavLink className="hover:underline p-1" to="/work">Work</NavLink></li>
         <li> <NavLink className="hover:underlin p-1" to="/contact">Contact</NavLink></li>
-        {/* <li> <NavLink to="/resume">Resume</NavLink></li> */}
+        <li> <NavLink className="hover:underlin p-1" to="/resume">Resume</NavLink></li>
       </ul>
 
 
@@ -45,6 +45,8 @@ const Navbar = () => {
 
         <li className="py-6 text-4xl"><NavLink to="/contact">Contact</NavLink></li>
 
+        <li className="py-6 text-4xl"><NavLink to="/resume">Resume</NavLink></li>
+
       </ul>
 
 
@@ -53,22 +55,22 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#003554]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume <BsFillPersonLinesFill size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="/resume">Resume <BsFillPersonLinesFill size={30} /></a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Linkedin <FaLinkedin size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/rodolfo-espinosa-nunez-77131b64/" target="_blank" rel="noopener noreferrer">Linkedin <FaLinkedin size={30} /></a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Github <FaGithub size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/rodolfoespinosa01" target="_blank" rel="noopener noreferrer">Github <FaGithub size={30} /></a>
           </li>
 
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0582ca]">
 
-            <a className="flex justify-between items-center w-full text-gray-300" href="/">Email <HiOutlineMail size={30} /></a>
+            <a className="flex justify-between items-center w-full text-gray-300" href="/contact">Contact <HiOutlineMail size={30} /></a>
           </li>
 
         </ul>
