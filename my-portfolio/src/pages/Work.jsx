@@ -6,6 +6,12 @@ import quizIMG from '../assets/quiz_preview.png'
 import save_plannerIMG from '../assets/save_planner.png'
 import note_takerIMG from '../assets/note_taker.png'
 
+const projects = [
+  { img: pwaIMG, githubLink: "https://github.com/rodolfoespinosa01/bc_c19_pwa", demoLink: "https://warm-sierra-95511-1e709179fab2.herokuapp.com/", projectTitle: "Text Editor (pwa)" },
+  { img: mvcIMG, githubLink: "https://github.com/rodolfoespinosa01/bc_c14_mvc", demoLink: "https://apohl53.github.io/Workout_Planner_Project/", projectTitle: "Workout Planner" },
+  { img: workout_plannerIMG, githubLink: "https://github.com/rodolfoespinosa01/bc_c14_mvc", demoLink: "https://github.com/rodolfoespinosa01/Workout_Planner_Project", projectTitle: "Workout Planner" },
+
+]
 
 
 const Work = () => {
@@ -21,21 +27,23 @@ const Work = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
           {/* Project# 1&2 PWA*/}
-          <div style={{ backgroundImage: `url(${pwaIMG})` }}
-            className="shadow-lg shadow-[#00a6fb] group container rounded-md flex justify-center items-center mx-auto content-div">
+          {projects.map((project) => (
+            <div style={{ backgroundImage: `url(${project.img})` }}
+              className="shadow-lg shadow-[#00a6fb] group container rounded-md flex justify-center items-center mx-auto content-div">
 
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className='text-2xl font-bold text-white tracking-wider'>
-                Text Editor(pwa)
-              </span>
-              <div className="pt-8 text-center">
-                <a href="https://warm-sierra-95511-1e709179fab2.herokuapp.com/"><button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#003554] font-bold text-lg">Demo</button></a>
-                <a href="https://github.com/rodolfoespinosa01/bc_c19_pwa"><button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#003554] font-bold text-lg">Code</button></a>
+              {/* Hover Effects */}
+              <div className="opacity-0 group-hover:opacity-100">
+                <span className='text-2xl font-bold text-white tracking-wider'>
+                  {project.projectTitle}
+                </span>
+                <div className="pt-8 text-center">
+                  <a href={project.demoLink}><button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#003554] font-bold text-lg">Demo</button></a>
+                  <a href={project.githubLink}><button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#003554] font-bold text-lg">Code</button></a>
 
+                </div>
               </div>
             </div>
-          </div>
+          ))}
           <div style={{ backgroundImage: `url(${mvcIMG})` }}
             className="shadow-lg shadow-[#00a6fb] group container rounded-md flex justify-center items-center mx-auto content-div">
 

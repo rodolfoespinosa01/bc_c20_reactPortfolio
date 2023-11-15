@@ -73,7 +73,8 @@ const ContactForm = () => {
           placeholder='Name'
           name='name'
           value={name}
-          onChange={handleNameChange} />
+          onChange={handleNameChange}
+          required />
         {nameError && <p className="text-red-500 text-sm">{nameError}</p>}
 
         <input
@@ -82,7 +83,8 @@ const ContactForm = () => {
           placeholder='Email'
           name='email'
           value={email}
-          onChange={handleEmailChange} />
+          onChange={handleEmailChange}
+          required />
         {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
 
         <textarea
@@ -90,7 +92,9 @@ const ContactForm = () => {
           name="message" rows="10"
           placeholder='Message'
           value={message}
-          onChange={handleMessageChange}></textarea>
+          onChange={handleMessageChange}
+          required
+        ></textarea>
         {messageError && <p className="text-red-500 text-sm">{messageError}</p>}
 
         <button className="text-white border -2 hover:bg-[#00a6fb] hover:border-[#006494] px-4 py-3 my-8 mx-auto flex items-center">Let's Colaborate!</button>
